@@ -7,10 +7,10 @@ import time
 
 st.title("📈 Real-Time Stock Market Dashboard")
 
-# Enter your stock symbol
+
 stock_symbol = st.text_input("Enter Stock Symbol (Example: AAPL, MSFT, TSLA):", "AAPL")
 
-# Fetch stock data from Yahoo Finance API alternative
+
 def get_stock_data(symbol):
     url = f"https://query1.finance.yahoo.com/v7/finance/chart/{symbol}?range=1d&interval=1m"
     response = requests.get(url).json()
